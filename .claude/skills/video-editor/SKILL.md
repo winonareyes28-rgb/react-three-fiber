@@ -172,3 +172,34 @@ Tell the user:
 - `ffprobe` the output: correct resolution, aspect, fps, duration, audio present.
 - Extract 3–5 frames (start, middle, end, at caption moments) and look at them.
 - Original file unchanged (same size and modified time as before).
+
+---
+
+## Real-estate listing reels (learned 2026-10-21)
+
+The user makes house-listing reels for **AXEIA Development** projects marketed by **NRA Realty**
+(Sto. Tomas & San Jose, Batangas). Where things live in Google Drive (connector):
+- **Inventory / prices:** `INVENTORY AXEIA Projects Sto. Tomas and San Jose Batangas .xlsx`
+  (one sheet per project/phase: lot, house model, lot area, floor area, TCP, reservation fee,
+  DP terms). Always quote from the sheet dated today, and state "as of <date>, subject to change".
+- **Footage:** `AXEIA HOUSES/<model>` folders (Linnea Single Attached + `LINNEA VID`, Jasmine SA,
+  Jasmine Expanded, Adeline, Tangerine, Carnation SA, Midori) and `HOUSE MODELS/`.
+- **Site plans** (`AGC_..._SITE DEVELOPMENT PLAN...jpg`) list each phase's house models and DHSUD LS numbers.
+
+Accuracy rules for listings:
+1. **Verify the house model visually** (e.g. the model's name sign in a drone shot, matching façade)
+   — folders can hold mixed models; never use a photo of a different model (the posting PNG in
+   `Adeline/` is an Adeline bungalow, not Linnea).
+2. Use the exact model + project + phase name from the inventory (e.g. "Linnea Single Attached —
+   Le Moubréza South Phase 1"). Only state features the brochure/site plan lists.
+3. **Never post data from sheets marked "PRE-SELLING / awaiting LTS" or "not for social media
+   posting"** (e.g. LMB South Ph3, LMB Ph3E). Include the DHSUD LS No. on the end card.
+4. Footage is of the model house: add "Model house shown; actual unit finishes may vary."
+5. Drive downloads cap at 10 MB per file and break when many run in parallel — download 1–2 at a
+   time; for bigger clips ask the user to upload them to the session.
+6. No licensed music is available here — deliver with a silent track and tell the user to add
+   trending audio in the IG/FB editor.
+
+Saved contact for end cards (given by the user): **0917 187 5095 · joanramores04@gmail.com**.
+`scripts/listing_reel_example.py WORKDIR OUT.mp4` is the Linnea reel build (shot list, brand
+overlays, price card, end card) — copy and edit the shot list/text for the next listing.
